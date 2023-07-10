@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+  /* font-family: "Circular Sp UI v3 T Black", sans-serif; */
+  color: white;
+}
+
+.body_container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.sidebar__content-top {
+  padding: 20px;
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+.sidebar__content-bottom {
+  padding: 20px;
+  background-color: #121212;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.content {
+  border-radius: 10px;
+  flex-grow: 1;
+  background-color: #121212;
+  padding: 20px;
+}
+
+.content__category {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+.content__category-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content__category-navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.content__navbar {
+  margin-bottom: 50px;
+}
+
+.content__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #212121;
+  border-radius: 8px;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.content__card:hover .content__card-logo {
+  opacity: 1;
+}
+
+.content__card__albumCover {
+  width: 180px;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.content__card-songDetails {
+  text-align: center;
+  padding: 10px;
+}
+
+.content__card-songDetails > h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content__card-songDetails > p {
+  margin: 0;
+  font-size: 14px;
+  color: #888;
+}
+
+.content__card-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.content__card-logo > img {
+  width: 30px;
+  height: 30px;
+}
